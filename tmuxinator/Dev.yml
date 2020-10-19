@@ -46,12 +46,13 @@ root: ~/
 
 windows:
   - editor:
-      layout:  04cb,254x83,0,0{182x83,0,0[182x66,0,0,0,182x16,0,67,7],71x83,183,0[71x16,183,0,6,71x66,183,17,23]}
+      layout: 619a,297x90,0,0{204x90,0,0[204x70,0,0,0,204x19,0,71,1],92x90,205,0[92x10,205,0,2,92x14,205,11,3,92x64,205,26,4]} 
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
         - clear
         - clear
+        - spt
         - htop
         - clear
