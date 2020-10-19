@@ -13,4 +13,4 @@ apt install -y tmux
 printf "%$width.${width}sFinished Installing Software%$width.${width}s\n " "$divider" "$divider"
 source ./plugins.sh
 source ./configcopy.sh
-printf "%$width.${width}sFinished%$width.${width}s\n " "$divider" "$divider"
+printf "%$width.${width}sFinished%$width.${width}s\n" "$divider" "$divider"
