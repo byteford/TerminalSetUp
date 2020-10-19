@@ -6,5 +6,5 @@ apt-get install -y vim >> install.log
 apt-get install -y zsh >> install.log
 apt install -y tmux >> install.log
 
-source plugins.sh
-source configcopy.sh
+source ./plugins.sh
+source ./configcopy.sh
