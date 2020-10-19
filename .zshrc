@@ -116,6 +116,7 @@ alias acgit="cd ~/Documents/Academy/GIT"
 alias locs=~/Documents/scripts/saveloc.sh
 alias locl=~/Documents/scripts/loadloc.sh
 alias tmuxa="tmux attach -t"
+alias tx=tmuxinator
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
