@@ -6,7 +6,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'severin-lemaignan/vim-minimap'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 set number
 set ruler
