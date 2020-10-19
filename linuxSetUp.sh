@@ -1,11 +1,10 @@
-apt-get update
-apt update
-apt-get install -y curl
-apt-get install -y vim
-apt-get install -y zsh
-apt install -y tmux
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+apt-get update >> install.log
+apt update >> install.log
+apt-get install -y curl >> install.log
+apt-get install -y vim >> install.log
+apt-get install -y zsh >> install.log
+apt install -y tmux >> install.log
+
+source plugins.sh
 source configcopy.sh
