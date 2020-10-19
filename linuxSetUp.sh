@@ -14,3 +14,5 @@ cp .vimrc ~/.vimrc
 vim +PlugInstall +qall
 
 cp .tmux.conf ~/.tmux.conf
+
+tmux attach-session -t mysession\; source-file ~/.tmux.conf; detach-client
