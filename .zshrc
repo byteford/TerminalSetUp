@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode osx)
+plugins=(git vscode osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,7 +116,7 @@ alias acgit="cd ~/Documents/Academy/GIT"
 alias locs=~/Documents/scripts/saveloc.sh
 alias locl=~/Documents/scripts/loadloc.sh
 alias tmuxa="tmux attach -t"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
