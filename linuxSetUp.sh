@@ -1,4 +1,8 @@
+divider===============================
+divider=$divider$divider
+width=43
 
+printf "%$width.$widths\n" "$divider"
 apt-get update >> install.log
 apt update >> install.log
 apt-get install -y curl >> install.log
