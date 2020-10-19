@@ -22,7 +22,4 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
 set termguicolors
-if empty(glob('~/.vim/autoload/plug.vim'))
-else
-colorscheme quantum
-endif
+silent! colorscheme quantum
