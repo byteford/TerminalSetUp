@@ -1,3 +1,7 @@
+divider===============================
+divider=$divider$divider
+width=20
+
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
 cp .vimrc ~/.vimrc
