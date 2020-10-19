@@ -25,4 +25,4 @@ set termguicolors
 if empty(glob('~/.vim/autoload/plug.vim'))
 else
 colorscheme quantum
-fi
+endif
