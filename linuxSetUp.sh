@@ -2,7 +2,7 @@ divider===============================
 divider=$divider$divider
 width=20
 
-printf "%$width.${width}sStart%$width.${width}s\n" "$divider" "="
+printf "%$width.${width}sStart%$width.${width}s\n" "$divider" "$divider"
 printf "%$width.${width}sInstall Software%$width.${width}s\n" "$divider" "$divider"
 apt-get update
 apt update
