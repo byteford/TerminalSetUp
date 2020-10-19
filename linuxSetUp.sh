@@ -4,12 +4,12 @@ width=20
 
 printf "%$width.${width}sStart%$width.${width}s\n " "$divider" "$divider"
 printf "%$width.${width}sInstall Software%$width.${width}s\n " "$divider" "$divider"
-apt-get update >> install.log
-apt update >> install.log
-apt-get install -y curl >> install.log
-apt-get install -y vim >> install.log
-apt-get install -y zsh >> install.log
-apt install -y tmux >> install.log
-
+apt-get update
+apt update
+apt-get install -y curl
+apt-get install -y vim
+apt-get install -y zsh
+apt install -y tmux
+printf "%$width.${width}sFinished Installing Software%$width.${width}s\n " "$divider" "$divider"
 source ./plugins.sh
 source ./configcopy.sh
