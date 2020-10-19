@@ -9,3 +9,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
 cp .vimrc ~/.vimrc
+vim +PlugInstall +qall
