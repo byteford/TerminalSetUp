@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 call plug#begin('~/.vim/plugged')
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'severin-lemaignan/vim-minimap'
+Plug 'sheerun/vim-polyglot'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 set number
