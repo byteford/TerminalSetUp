@@ -118,6 +118,12 @@ alias locl=~/Documents/scripts/loadloc.sh
 alias tmuxa="tmux attach -t"
 alias tx=tmuxinator
 alias dockervm='docker run -it --rm --privileged --pid=host justincormack/nsenter1'
+alias tf='terraform'
+alias tff='terraform fmt -recursive'
+alias tfp='terraform plan'
+alias tfa='terraform apply'
+alias tfweb='f(){open -a "Google Chrome" "http://$(tf output $1 | sed -e '\''s/^"//'\'' -e '\''s/"$//'\'' )"};f'
+alias compose='docker-compose'
 
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
