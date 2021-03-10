@@ -105,6 +105,8 @@ DEFAULT_USER=`whoami`
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+export EDITOR="vim"
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
@@ -122,9 +124,11 @@ alias tf='terraform'
 alias tff='terraform fmt -recursive'
 alias tfp='terraform plan'
 alias tfa='terraform apply'
+alias tfi='terraform init'
+alias tfd='terraform destroy'
 alias tfweb='f(){open -a "Google Chrome" "http://$(tf output $1 | sed -e '\''s/^"//'\'' -e '\''s/"$//'\'' )"};f'
 alias compose='docker-compose'
-
+alias lambuild="GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o "
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

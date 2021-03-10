@@ -1,7 +1,7 @@
 # /Users/james.sandford/.config/tmuxinator/Dev.yml
 
 name: Dev
-root: ~/
+root: ~/<%= @args[0] %>
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,7 +51,7 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - clear
+        - 
         - htop 
-        - clear
-        - clear
+        - brew update && brew upgrade
+        -
