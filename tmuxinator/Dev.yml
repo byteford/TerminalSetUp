@@ -45,8 +45,8 @@ root: ~/<%= @args[0] %>
 # attach: false
 
 windows:
-  - editor:
-      layout: 1e8c,297x90,0,0[297x74,0,0{228x74,0,0,0,68x74,229,0,1},297x15,0,75{148x15,0,75,2,148x15,149,75,3}] 
+  - Dev:
+      layout: 6380,191x51,0,0[191x39,0,0{125x39,0,0,0,65x39,126,0,1},191x11,0,40{95x11,0,40,2,95x11,96,40,3}] 
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after

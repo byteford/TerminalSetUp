@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode osx zsh-syntax-highlighting)
+plugins=(git vscode osx zsh-syntax-highlighting z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,8 +115,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 #nav
 alias acgit="cd ~/Documents/Academy/GIT"
 
-alias locs=~/Documents/scripts/saveloc.sh
-alias locl=~/Documents/scripts/loadloc.sh
+alias locs="/Users/james.sandford/Documents/ZSHBackUp/goloc/goloc save"
+alias locl="cd $(/Users/james.sandford/Documents/ZSHBackUp/goloc/goloc load)"
 alias tmuxa="tmux attach -t"
 alias tx=tmuxinator
 alias dockervm='docker run -it --rm --privileged --pid=host justincormack/nsenter1'
@@ -126,9 +126,17 @@ alias tfp='terraform plan'
 alias tfa='terraform apply'
 alias tfi='terraform init'
 alias tfd='terraform destroy'
+alias tfr='terraform destroy; terraform apply --auto-aprove'
 alias tfweb='f(){open -a "Google Chrome" "http://$(tf output $1 | sed -e '\''s/^"//'\'' -e '\''s/"$//'\'' )"};f'
 alias compose='docker-compose'
 alias lambuild="GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o "
+alias vimw='tmux new-window vim $1'
+alias play='spotify play'
+alias stop='spotify stop'
+alias playday='spotify play uri spotify:playlist:37i9dQZF1E389NGOg3TRXl'
+alias playweek='spotify play uri spotify:playlist:37i9dQZEVXcGLXr9p597Eg'
+alias composenew='tmux neww /Users/james.sandford/Documents/UsefulCode/newwindow.sh'
+alias upp='f(){$1 | up};f'
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -141,3 +149,6 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/us
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+# Added by Krypton
+export GPG_TTY=$(tty)
