@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode osx zsh-syntax-highlighting z zsh-autosuggestions)
+plugins=(git vscode macos zsh-syntax-highlighting z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -138,11 +138,11 @@ alias playweek='spotify play uri spotify:playlist:37i9dQZEVXcGLXr9p597Eg'
 alias composenew='tmux neww /Users/james.sandford/Documents/UsefulCode/newwindow.sh'
 alias upp='f(){$1 | up};f'
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+alias run='runner.sh start -p 3000:3000  && runner.sh run && runner.sh stop'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Add Visual Studio Code (code)
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/james.sandford/Documents/ECS/client/HSBC/runner"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
